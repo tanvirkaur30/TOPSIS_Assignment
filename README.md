@@ -12,7 +12,6 @@ The input dataset is read from a CSV file.
 - Columns represent different decision criteria.
 The first column contains the names of alternatives and is excluded from calculations.
 
----
 
 ### Step 2: Normalization of Decision Matrix
 Since criteria may have different units and scales, normalization is required.
@@ -22,14 +21,12 @@ rᵢⱼ = xᵢⱼ / √(Σxᵢⱼ²)
 
 This step converts all criteria values to a comparable scale.
 
----
 
 ### Step 3: Weight Assignment
 Each criterion is assigned a weight based on its importance.
 The normalized matrix is multiplied by the corresponding weights to obtain the weighted
 normalized decision matrix.
 
----
 
 ### Step 4: Identification of Ideal Best and Ideal Worst
 For each criterion:
@@ -38,7 +35,6 @@ For each criterion:
 - If the impact is negative (-), the minimum value is taken as the ideal best and the
   maximum as the ideal worst.
 
----
 
 ### Step 5: Distance Calculation
 The Euclidean distance of each alternative from:
@@ -46,7 +42,6 @@ The Euclidean distance of each alternative from:
 - Ideal Worst solution
 is calculated.
 
----
 
 ### Step 6: TOPSIS Score Calculation
 The TOPSIS score for each alternative is calculated using:
@@ -55,7 +50,6 @@ Score = Distance from Ideal Worst / (Distance from Ideal Best + Distance from Id
 
 A higher score indicates a better alternative.
 
----
 
 ### Step 7: Ranking of Alternatives
 Alternatives are ranked in descending order of TOPSIS scores.
