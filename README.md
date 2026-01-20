@@ -93,6 +93,12 @@ A bar graph is plotted to visualize the TOPSIS scores of different alternatives.
 
 The alternative with the tallest bar has the highest TOPSIS score and is ranked as the best
 choice according to the decision criteria.
+## Web Application URL
+
+The TOPSIS web application is deployed using Flask and exposed via ngrok.
+
+🔗 **Live Web App:**  
+https://epicondylian-shera-nonmonistically.ngrok-free.dev/
 
 ## Conclusion
 
@@ -102,6 +108,8 @@ Python, including data preprocessing, score computation, ranking, and visualizat
 
 The result table and graph together provide both numerical and visual insights, making the
 decision-making process transparent and easy to interpret.
+
+
 
 
 
